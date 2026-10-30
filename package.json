@@ -1,0 +1,25 @@
+{
+  "name": "elysium-builder-skill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent skill and read-only checks for building on Elysium, kHYPE, and Markets. Part of ElysiumForge Labs.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "khype": "tsx scripts/read-khype-rate.ts",
+    "elysium": "tsx scripts/elysium-check.ts",
+    "markets": "tsx scripts/markets-snapshot.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "viem": "^2.57.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3"
+  }
+}
